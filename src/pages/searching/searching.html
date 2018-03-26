@@ -1,0 +1,68 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-searchbar
+      [(ngModel)]="myInput"
+      [showCancelButton]="shouldShowCancel"
+      (ionInput)="onInput($event)"
+      (ionCancel)="onCancel($event)">
+    </ion-searchbar>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <section>
+    <h3>Top Event</h3>
+    <div class="event">
+      <article (click)="goToParty(1)">
+        <img src="../assets/imgs/Event-HungryParty.jpg" />
+        <div>
+          <h3>Hungry Party</h3>
+          <p>De grands artistes a venir écouter quand on lit sur la line-up la présence de Hungry-man en coopération direct avec le selecta Angry-Man ...</p>
+        </div>
+      </article>
+      <article (click)="goToParty(2)">
+        <img src="../assets/imgs/Event-ManuMalin.jpg" />
+        <div>
+          <h3>Hungry Party</h3>
+          <p>De grands artistes a venir écouter quand on lit sur la line-up la présence de Hungry-man en coopération direct avec le selecta Angry-Man ...</p>
+        </div>
+      </article>
+      <article (click)="goToParty(3)">
+        <img src="../assets/imgs/Event-Folamour.jpg" />
+        <div>
+          <h3>Hungry Party</h3>
+          <p>De grands artistes a venir écouter quand on lit sur la line-up la présence de Hungry-man en coopération direct avec le selecta Angry-Man ...</p>
+        </div>
+      </article>
+    </div>
+  </section>
+  <section>
+    <h3>Top Artist</h3>
+    <div class="event">
+      <article>
+        <img src="../assets/imgs/TopArtiste-Sponso.jpg" />
+        <div>
+          <h3>Hungry Party</h3>
+          <p>De grands artistes a venir écouter quand on lit sur la line-up la présence de Hungry-man en coopération direct avec le selecta Angry-Man ...</p>
+        </div>
+      </article>
+      <article>
+        <img src="../assets/imgs/Artiste-StephanB.jpg" />
+        <div>
+          <h3>Hungry Party</h3>
+          <p>De grands artistes a venir écouter quand on lit sur la line-up la présence de Hungry-man en coopération direct avec le selecta Angry-Man ...</p>
+        </div>
+      </article>
+      <article>
+        <img src="../assets/imgs/Artiste-BorisB.jpg" />
+        <div>
+          <h3>Hungry Party</h3>
+          <p>De grands artistes a venir écouter quand on lit sur la line-up la présence de Hungry-man en coopération direct avec le selecta Angry-Man ...</p>
+        </div>
+      </article>
+    </div>
+  </section>
+</ion-content>

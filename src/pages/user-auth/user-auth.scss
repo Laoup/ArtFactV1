@@ -1,0 +1,123 @@
+page-user-auth {
+
+  .header {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    .icon {
+      font-size: 2.5rem;
+      //font-size: 10vw;
+    }
+    h3 {
+      flex: 1;
+      text-align: center;
+    }
+  }
+
+  .content {
+    background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0, 0, 0, 0.75)),url("../assets/imgs/Background-Main.jpg");
+    background-size: 140% 140%;
+    background-repeat: no-repeat;
+    background-position: 65% 50%;
+    text-align: center;
+    .scroll-content {
+      overflow: hidden;
+      //div:first-child
+      .one {
+        margin-bottom: 10vh;
+        margin-top: 5vh;
+      }
+      //div:last-child
+      .two {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        //height: 10vh;
+        > div {
+          //margin-top: 2vh;
+          margin-bottom: 6vh;
+        }
+        .field {
+          margin: auto;
+          display: flex;
+          //justify-content: center;
+          justify-content: flex-start;
+          align-items: center;
+          color: white;
+          width: 85vw;
+          img {
+            width: 48px;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+
+            & input {
+              background: transparent;
+              height: 28px;
+              border-color: transparent;
+            }
+          }
+        }
+        .login {
+          color: white;
+          button {
+            background-color: white;
+            color: blue;
+            border: 1px solid blue;
+            font-weight: 300;
+            width: 30%;
+          }
+        }
+        .logo_login {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+          width: 85vw;
+          margin: auto;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width : 900px) {
+  page-user-auth {
+    .header .icon {
+      font-size: 10vw;
+    }
+    .logo {
+      width: 100px;
+      //width: 40%;
+    }
+    .content {
+      .scroll-content {
+        div:last-child {
+          .field {
+            img {
+              margin-right: 2.5vw;
+              width: 32px;
+              }
+            }
+          .login {
+            width: 75vw;
+            margin: auto;
+            button {
+              //width: 75vw;
+              width: 100%;
+            }
+          }
+          .logo_login {
+            img {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

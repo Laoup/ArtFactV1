@@ -1,0 +1,95 @@
+page-user-register {
+
+  .header {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: flex-start;
+    .icon {
+      font-size: 2.5rem;
+    }
+    h3 {
+      flex: 1;
+      text-align: center;
+    }
+  }
+
+  .content {
+    background: linear-gradient(0deg, rgba(0,0,0,0.75), rgba(0, 0, 0, 0.75)),url("../assets/imgs/Background-Main.jpg");
+    background-size: 140% 140%;
+    background-repeat: no-repeat;
+    background-position: 65% 50%;
+    text-align: center;
+    .scroll-content {
+      overflow: hidden;
+      //padding: 0;
+      .one {
+        margin-bottom: 10vh;
+        margin-top: 5vh;
+      }
+      .two {
+        display: flex;
+        flex-direction: column;
+        .field {
+          margin: auto;
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          color: white;
+          //width: 100vw;
+          padding: 1.5vh 7.5vw;
+          border-bottom: 1px solid white;
+          img {
+            width: 48px;
+          }
+          div {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+
+            & input {
+              background: transparent;
+              height: 28px;
+              border-color: transparent;
+            }
+          }
+        }
+        button {
+          background-color: white;
+          color: blue;
+          border: 1px solid blue;
+          font-weight: 300;
+          width: 30%;
+        }
+      }
+    }
+  }
+
+}
+
+@media screen and (max-width : 900px) {
+  page-user-register {
+    .header .icon {
+      font-size: 10vw;
+    }
+    .logo {
+      width: 100px;
+    }
+    .content {
+      .scroll-content {
+        .two {
+          .field {
+            img {
+              margin-right: 2.5vw;
+              width: 32px;
+            }
+          }
+          button {
+            width: 75vw;
+          }
+        }
+      }
+    }
+  }
+}

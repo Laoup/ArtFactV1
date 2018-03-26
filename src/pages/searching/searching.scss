@@ -1,0 +1,33 @@
+page-searching {
+
+  .toolbar-background {
+    background-color: #272727;
+  }
+
+  .content {
+    color: white;
+    background-color: #272727;
+    .event {
+      color: #272727;
+      article {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+        //height: 30vh;
+        img {
+          height: 20vh;
+        }
+        > div {
+          h3 {
+            padding: 10px 0 0 10px;
+          }
+          p {
+            padding: 0 10px 10px 10px;
+          }
+        }
+      }
+    }
+  }
+
+}

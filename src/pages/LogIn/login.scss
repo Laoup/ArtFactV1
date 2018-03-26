@@ -1,0 +1,60 @@
+page-login {
+
+  h5 {
+    color: aliceblue;
+    font-weight: 1000;
+    font-size: 2.5rem;
+  }
+  p {
+    color: aliceblue;
+    font-weight: 800;
+    font-size: 2rem;
+  }
+
+  .content {
+    background-image: url("../assets/imgs/Background-Main.jpg");
+    background-size: 140% 140%;
+    background-repeat: no-repeat;
+    background-position: 65% 50%;
+    text-align: center;
+    .scroll-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      & div:first-child {
+        flex: 1;
+        margin-top: 5vh;
+      }
+
+    }
+  }
+
+  .bottom {
+    flex: 0;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    &_one {
+      color: blue;
+      border: 1px solid blue;
+      font-weight: 300;
+    }
+    &_two {
+      background-color: transparent;
+      color: aliceblue;
+      border: 1px solid aliceblue;
+    }
+  }
+}
+
+@media screen and (max-width : 900px) {
+
+    page-login {
+      .logo {
+        width: 75%;
+      }
+      .bottom  button {
+        width: 75vw;
+      }
+    }
+}
